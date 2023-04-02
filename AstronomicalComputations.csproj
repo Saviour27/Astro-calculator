@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E51E58DF-7E4D-4766-B2D4-14594D6FF35E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AstronomicalComputations</RootNamespace>
+    <AssemblyName>AstronomicalComputations</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="firstpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="firstpage.Designer.cs">
+      <DependentUpon>firstpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="alteastweststars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alteastweststars.Designer.cs">
+      <DependentUpon>alteastweststars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="quadrantal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="quadrantal.Designer.cs">
+      <DependentUpon>quadrantal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="starid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="starid.Designer.cs">
+      <DependentUpon>starid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="azimuth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="azimuth.Designer.cs">
+      <DependentUpon>azimuth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="polaris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="polaris.Designer.cs">
+      <DependentUpon>polaris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="alteastwestsun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alteastwestsun.Designer.cs">
+      <DependentUpon>alteastwestsun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="longitude.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="longitude.Designer.cs">
+      <DependentUpon>longitude.cs</DependentUpon>
+    </Compile>
+    <Compile Include="latitude.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="latitude.Designer.cs">
+      <DependentUpon>latitude.cs</DependentUpon>
+    </Compile>
+    <Compile Include="latnorthsouth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="latnorthsouth.Designer.cs">
+      <DependentUpon>latnorthsouth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="longeastwest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="longeastwest.Designer.cs">
+      <DependentUpon>longeastwest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="astrofix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="astrofix.Designer.cs">
+      <DependentUpon>astrofix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="table2\Rows.cs" />
+    <EmbeddedResource Include="firstpage.en-NG.resx">
+      <DependentUpon>firstpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="firstpage.resx">
+      <DependentUpon>firstpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="alteastweststars.resx">
+      <DependentUpon>alteastweststars.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="quadrantal.resx">
+      <DependentUpon>quadrantal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="starid.resx">
+      <DependentUpon>starid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="azimuth.resx">
+      <DependentUpon>azimuth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="polaris.resx">
+      <DependentUpon>polaris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="alteastwestsun.resx">
+      <DependentUpon>alteastwestsun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="longitude.resx">
+      <DependentUpon>longitude.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="latitude.resx">
+      <DependentUpon>latitude.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="latnorthsouth.resx">
+      <DependentUpon>latnorthsouth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="longeastwest.resx">
+      <DependentUpon>longeastwest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="astrofix.resx">
+      <DependentUpon>astrofix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\-1_radisson-blu_nigeria-vol1_main.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_20150810_121510.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_20150816_112827.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p20004727g94001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\80px-Libr0310.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\220px-Astrolabium.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\220px-Karte_Mars_Schiaparelli_MKL1888.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\220px-Su_Song_Star_Map_1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\220px-Su_Song_Star_Map_2.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\220px-Table_of_Astronomy,_Cyclopaedia,_Volume_1,_p_164.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-photo-149542.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-photo-2685331.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-photo-2695831.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ana2.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
